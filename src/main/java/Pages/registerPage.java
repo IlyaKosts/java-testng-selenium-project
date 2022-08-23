@@ -3,12 +3,11 @@ package Pages;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
 import java.io.File;
+
 import java.io.IOException;
 
 public class registerPage extends Base{
-
     public void registerProcess(String lg, String ps, String pc, String fn, String ln, String em, String ic) throws IOException {
         goToRegPg();
         findByCss("[id='user_login']").sendKeys(lg);

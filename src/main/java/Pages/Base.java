@@ -10,7 +10,6 @@ public class Base {
     public Base() {
         this.driver = DriverManager.getDriver();
     }
-
     public WebElement findByXpath(String xpath) {
         return driver.findElement(By.xpath(xpath));
     }
@@ -20,11 +19,9 @@ public class Base {
     public void navBack(){
         driver.navigate().back();
     }
-
     public void goToRegPg() {
         driver.get("https://www.redmine.org/account/register");
     }
-
     public void commitBtnClick() {
         findByCss("[name='commit']").click();
     }
